@@ -31,22 +31,22 @@ const AboutPage = (props) => {
         />
 
         <div className={styles.navContainer}>
-          <ThemeLink onClick={() => handleScroll(historyRef)} to={'#history'}>
-            History
+          <ThemeLink onClick={() => handleScroll(historyRef)} to={'#introduction'}>
+            Introduction
           </ThemeLink>
           <ThemeLink onClick={() => handleScroll(valuesRef)} to={'#values'}>
-            Values
+            Hobbies
           </ThemeLink>
           <ThemeLink
             onClick={() => handleScroll(sustainabilityRef)}
             to={'#sustainability'}
           >
-            Sustainability
+            Education
           </ThemeLink>
         </div>
 
         <Container size={'large'} spacing={'min'}>
-          <div className={styles.detailContainer} ref={historyRef}>
+          <div className={styles.detailContainer} ref={introductionRef}>
             <p>
               Founded in 1860, Sydney is an innovative British brand with a
               contemporary edge. We make timeless everyday luxury clothing.
